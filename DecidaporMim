@@ -1,0 +1,24 @@
+import random
+opc = 0
+
+while opc != 2:
+    print("*** MENU ***")
+    print("\n1. Perguntar")
+    print("2. Finalizar")
+    print("************\n")
+
+    opc = int(input("Digite a opção: "))
+
+    if opc==1:
+
+        ask = str(input("\nPergunta: "))
+
+        respostas = ["Cara, vai na fé", "Sim, você realmente deveria", "Vai descansar fi"]
+
+        print(f"Sua resposta: {random.choice(respostas)}\n")
+
+    elif opc==2:
+        print("\nFinalizando...")
+
+    else:
+        print("\nOpção Inválida\n")
