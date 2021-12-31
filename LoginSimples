@@ -1,0 +1,21 @@
+usuario = input("Digite seu usuário: ")
+senha = input("Digite sua senha: ")
+op = 0
+
+while usuario == senha:
+	print("\nValores Iguais! Por favor, digite as credencias novamente.")
+	op = input("\nDeseja mudar a senha (s) ou o usuário (u)? ")
+
+	if op == "s":
+		senha = input("\nDigite sua senha: ")
+				
+	elif op == "u":
+		usuario = input("\nDigite seu usuário: ")
+
+	else:
+		print("\nOpção Inválida!!")
+
+else:
+	print("\nLogin Efetuado com Sucesso! :)")
+	print("\nAgora suas credenciais são:")
+	print(f"Usuário: {usuario}\nSenha: {senha}")
